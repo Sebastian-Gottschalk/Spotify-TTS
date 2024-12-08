@@ -63,6 +63,8 @@ def get_recommendations(id, headers, limit):
     TTS.read_text(f'Added {limit} songs to the queue')
 
 def save_in_playlist(id,headers):
+    # This specific value of my_playlist_uri belongs to my personal playlist.
+    # You can't edit it but feel free to check it out
     my_playlist_uri = "spotify:playlist:68FxkgffYahgQCwrtIcxE9"
     sp.playlist_add_items(my_playlist_uri, [id])
     
